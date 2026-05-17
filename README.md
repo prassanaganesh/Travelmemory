@@ -53,4 +53,54 @@ This project aims to deploy a production-ready MERN application on **AWS**, usin
 <img width="1786" height="556" alt="image" src="https://github.com/user-attachments/assets/74c28194-d18b-4de8-be90-6194838232ec" />
 
 ### Step 2: Connect to EC2
+```bash
+ssh -i PEM_KEY.pem ubuntu@65.0.7.136
+
 <img width="840" height="60" alt="image" src="https://github.com/user-attachments/assets/13f710a6-f7de-48e9-bcaa-fa2c4a56d1d1" />
+
+###Step 3: Install Required Software
+Update system packages
+
+# ⚙️ Scaling the Travel Memory Application
+
+## STEP 1: Create AMI (Golden Image)
+This captures your working server.
+
+In **AWS Console**:
+1. Go to **EC2 → Instances**
+2. Select your working instance
+3. Click **Actions → Image and templates → Create Image**
+4. Fill:
+   - **Name**: `travelmemory-ami`
+   - Leave defaults
+
+---
+
+## STEP 2: Create Launch Template
+1. Go to **EC2 → Launch Templates**
+2. Click **Create Launch Template**
+
+Fill the following:
+
+**Basic:**
+- **Name**: `travelmemory-template`
+
+**AMI:**
+- Select your created AMI
+
+**Instance Type:**
+- `t2.micro`
+
+**Key Pair:**
+- Select your existing key
+
+**Security Group:**
+- Create/select one with:
+  - HTTP → Port 80 → `0.0.0.0/0`
+  - SSH → Port 22 → Your existing EC2 IP
+
+--
+<img width="1601" height="686" alt="image" src="https://github.com/user-attachments/assets/4ba00638-9eea-4f1e-bcc3-b76305b7ef02" />
+
+
+
