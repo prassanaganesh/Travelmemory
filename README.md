@@ -94,7 +94,7 @@ Create cluster → Whitelist 0.0.0.0/0 → Copy connection string.
 
 Add:
 
-MONGO_URI=mongodb+srv://prassanaganesh_db_user:nBei08Lsd835otAF@travelmemory.8kk7ump.mongodb.net/?appName=travelmemory
+MONGO_URI=mongodb+srv://prassanaganesh_db_user:<db_password>@travelmemory.8kk7ump.mongodb.net/?appName=travelmemory
 PORT=3001
 
 ###Step 7: Start Backend with PM2
