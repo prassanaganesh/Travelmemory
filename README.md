@@ -57,26 +57,26 @@ ssh -i PEM_KEY.pem ubuntu@65.0.7.136
 
 <img width="840" height="60" alt="image" src="https://github.com/user-attachments/assets/13f710a6-f7de-48e9-bcaa-fa2c4a56d1d1" />
 
-###Step 3: Install Required Software
+### Step 3: Install Required Software
 `Update system packages`
 
-# Update system packages
+#### Update system packages
 `sudo apt update && sudo apt upgrade -y`
 
-# Install Node.js (LTS v18)
+#### Install Node.js (LTS v18)
 `curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt install -y nodejs`
 
-# Install Git
+#### Install Git
 `sudo apt install git -y`
 
-# Install Nginx
+#### Install Nginx
 `sudo apt install nginx -y`
 
-# Install PM2
+#### Install PM2
 `sudo npm install -g pm2`
 
-###Step 4: Clone Repository
+### Step 4: Clone Repository
 
 `git clone https://github.com/prassanaganesh/Travelmemory.git
 cd Travel_Memory_App/backend`
@@ -94,7 +94,7 @@ Create cluster → Whitelist 0.0.0.0/0 → Copy connection string.
 
 Add:
 
-MONGO_URI=mongodb+srv://prassanaganesh_db_user:<db_password>@travelmemory.8kk7ump.mongodb.net/?appName=travelmemory
+MONGO_URI=mongodb+srv://prassanaganesh_db_user:nBei08Lsd835otAF@travelmemory.8kk7ump.mongodb.net/?appName=travelmemory
 PORT=3001
 
 ###Step 7: Start Backend with PM2
