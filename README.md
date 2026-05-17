@@ -318,3 +318,9 @@ Fill the following:
 
       ✅ After completing Cloudflare setup, the site will be accessible at:-http://www.memoryapp.site & -https://memoryapp.site/addexperience
 
+## Task 5: Design a deployment architecture diagram using draw.io to visualize the flow and connections.
+
+<img width="791" height="667" alt="image" src="https://github.com/user-attachments/assets/eac42111-3020-4042-8e6e-fba042bfbdd2" />
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/dec89a83-1f54-4096-981c-8099e4557a9f" />
+
