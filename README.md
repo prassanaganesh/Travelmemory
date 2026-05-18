@@ -53,7 +53,7 @@ This project aims to deploy a production-ready MERN application on **AWS**, usin
 <img width="1786" height="556" alt="image" src="https://github.com/user-attachments/assets/74c28194-d18b-4de8-be90-6194838232ec" />
 
 ### Step 2: Connect to EC2
-ssh -i PEM_KEY.pem ubuntu@65.0.7.136
+ssh -i PEM_KEY.pem ubuntu@(your EC2 ip)
 
 <img width="840" height="60" alt="image" src="https://github.com/user-attachments/assets/13f710a6-f7de-48e9-bcaa-fa2c4a56d1d1" />
 
